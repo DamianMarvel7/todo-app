@@ -14,10 +14,6 @@ const Todo = ({ todo }) => {
     dispatch({ type: "SET_CHECKBOX", id: todo.id });
   };
 
-  const handleDragStart = (event) => {
-    event.dataTransfer.setData("text/plain", todo.id);
-  };
-
   return (
     <div className="todo-details grid-column spacing-sm">
       <div className="todo-content grid-column-reverse">
